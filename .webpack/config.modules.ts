@@ -18,7 +18,12 @@ const configurationProd = {
           'ts-loader',
         ],
         exclude: [/node_modules/, /example/],
-      }
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      },
     ],
   },
   optimization: {

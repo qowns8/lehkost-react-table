@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "semi": "error",
+    "quotes": "error",
+    "jex-quotes": "error"
+  }
+}

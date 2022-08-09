@@ -1,8 +1,8 @@
 import React from "react"
 
 export interface ITableProps<TableItem = any> {
-  width?: 'auto' | '100%' | number
-  height?: 'auto' | '100%' | number
+  width?: 'auto' | number
+  height?: 'auto' | number
   headers: ITableHeaders<TableItem>
   data?: TableItem[]
 }
@@ -18,11 +18,11 @@ export interface ITableHead<TableItem = any> {
   width?: number
   height?: number
   sortRule?: {
-    name: string
+    display: string
     compare: ICompare<TableItem>
   }[],
   menu?: {
-    value: React.ReactElement
+    value: React.ReactNode
     onClick: () => void
   }[]
 }
