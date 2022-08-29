@@ -26,3 +26,11 @@ export interface ITableHead<TableItem = any> {
     onClick: () => void
   }[]
 }
+
+export interface ITableBodys<TableItem = any> {
+  data: ITableBody<TableItem>[]
+}
+export interface ITableBody<TableItem = any> {
+  key: string
+  value: string
+}
